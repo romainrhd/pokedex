@@ -1,14 +1,10 @@
 <script setup>
-import { onBeforeMount, ref } from "vue";
+import { ref } from "vue";
 import IconPokeball from "./icons/IconPokeball.vue";
 
 const props = defineProps(["pokemon"]);
 const shinyShowed = ref(false);
-const currentAppearance = ref({});
-
-onBeforeMount(() => {
-  currentAppearance.value = props.pokemon.appearances[0];
-});
+const currentAppearance = ref(props.pokemon.appearances[0]);
 
 function toggleAppearance(appearanceId) {
   currentAppearance.value = props.pokemon.appearances.find(
