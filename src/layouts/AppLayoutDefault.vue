@@ -1,5 +1,4 @@
 <script setup>
-import { RouterView } from "vue-router";
 import TheHeader from "@/components/TheHeader.vue";
 import TheFooter from "@/components/TheFooter.vue";
 </script>
@@ -9,7 +8,7 @@ import TheFooter from "@/components/TheFooter.vue";
     <TheHeader />
     <div class="flex-grow px-4 py-4 bg-gray-100">
       <div class="container mx-auto">
-        <RouterView />
+        <slot />
       </div>
     </div>
     <TheFooter />
