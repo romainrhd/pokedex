@@ -44,7 +44,7 @@ function toggleShiny() {
       #{{ pokemon.nationalNumber + " " + pokemon.name }}
     </h3>
     <div class="flex flex-wrap justify-center py-2">
-      <span v-for="appearance in pokemon.appearances" :key="appearance.id">
+      <template v-for="appearance in pokemon.appearances" :key="appearance.id">
         <span
           v-if="pokemon.appearances.length > 1"
           class="w-1/3 text-center cursor-pointer"
@@ -57,7 +57,7 @@ function toggleShiny() {
             appearance.category.slice(1)
           }}</span
         >
-      </span>
+      </template>
     </div>
   </div>
 </template>
