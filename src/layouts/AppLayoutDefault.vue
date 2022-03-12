@@ -6,7 +6,7 @@ import TheFooter from "@/components/TheFooter.vue";
 <template>
   <div class="flex flex-col min-h-screen">
     <TheHeader />
-    <div class="flex-grow px-4 py-4 bg-gray-100">
+    <div class="grow px-4 py-4 bg-gray-100">
       <div class="container mx-auto">
         <slot />
       </div>
