@@ -15,11 +15,11 @@ function toggleBurgerMenu() {
       <div>
         <h3 class="text-2xl font-medium">Pokédex</h3>
       </div>
-      <div class="hidden space-x-8 lg:flex">
+      <div class="hidden space-x-8 md:flex">
         <RouterLink to="/">National</RouterLink>
         <RouterLink to="/login">Se connecter</RouterLink>
       </div>
-      <div class="flex lg:hidden cursor-pointer" v-on:click="toggleBurgerMenu">
+      <div class="flex md:hidden cursor-pointer" v-on:click="toggleBurgerMenu">
         <div class="space-y-2">
           <span class="block w-8 h-0.5 bg-black"></span>
           <span class="block w-8 h-0.5 bg-black"></span>
@@ -28,7 +28,7 @@ function toggleBurgerMenu() {
       </div>
     </div>
     <div
-      class="container flex flex-col px-4 py-8 mx-auto space-y-2 lg:hidden bg-white"
+      class="container flex flex-col px-4 py-8 mx-auto space-y-2 md:hidden bg-white"
       :class="{ hidden: !openMenu }"
     >
       <RouterLink class="place-self-center" to="/">National</RouterLink>
