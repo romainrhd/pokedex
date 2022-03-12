@@ -18,7 +18,7 @@ function toggleShiny() {
 </script>
 
 <template>
-  <div class="relative flex flex-col basis-1/2 shadow-xl rounded-lg bg-white">
+  <div class="relative flex flex-col shadow-xl rounded-lg bg-white">
     <div class="absolute px-2 py-2 right-0">
       <font-awesome-icon
         class="text-gray-400 cursor-pointer"
