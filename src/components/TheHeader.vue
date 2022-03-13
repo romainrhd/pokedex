@@ -16,7 +16,7 @@ function toggleBurgerMenu() {
         <h3 class="text-2xl font-medium">Pokédex</h3>
       </div>
       <div class="hidden space-x-8 md:flex">
-        <RouterLink to="/">National</RouterLink>
+        <RouterLink to="/">Hisui</RouterLink>
         <RouterLink to="/login">Se connecter</RouterLink>
       </div>
       <div class="flex md:hidden cursor-pointer" v-on:click="toggleBurgerMenu">
@@ -31,7 +31,7 @@ function toggleBurgerMenu() {
       class="container flex flex-col px-4 py-8 mx-auto space-y-2 md:hidden bg-white"
       :class="{ hidden: !openMenu }"
     >
-      <RouterLink class="place-self-center" to="/">National</RouterLink>
+      <RouterLink class="place-self-center" to="/">Hisui</RouterLink>
       <RouterLink class="place-self-center" to="/login"
         >Se connecter</RouterLink
       >
