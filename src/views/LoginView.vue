@@ -39,7 +39,7 @@ function changeInput() {
       <div class="border-b border-black"></div>
       <div class="flex flex-col h-80">
         <div class="flex flex-col p-3">
-          <label for="login" class="mb-2 text-white">Login</label>
+          <label for="login" class="mb-2 font-medium text-white">Login</label>
           <input
             id="login"
             class="rounded p-2"
@@ -49,7 +49,7 @@ function changeInput() {
           />
         </div>
         <div class="flex flex-col p-3">
-          <label for="password" class="mb-2">Mot de passe</label>
+          <label for="password" class="mb-2 font-medium text-white">Mot de passe</label>
           <input
             id="password"
             class="rounded p-2"
@@ -64,9 +64,12 @@ function changeInput() {
           </button>
         </div>
         <div class="flex p-3 justify-center">
-          <a href="#">Mot de passe perdu ?</a>
+          <a class="text-white" href="#">Mot de passe perdu ?</a>
         </div>
       </div>
+    </div>
+    <div class="flex justify-center">
+      <a href="#">Je n'ai pas de compte</a>
     </div>
   </div>
 </template>
